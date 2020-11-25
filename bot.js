@@ -17,7 +17,7 @@ client.on('ready', () => {
 });
 
 client.on('message', async (msg) => {
-	if (msg.content.toLowerCase() === 'var') {
+	if (msg.content.toLowerCase().startsWith('var')) {
 		const firstEmbed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
 			.setTitle('Calculando resultado....')
